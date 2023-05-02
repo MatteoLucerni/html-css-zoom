@@ -2,15 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 :root{
     --button: #4a4a4a;
+    --green: #4bc800;
 }
 
 body{
     background-color: black;
     color: white;
+}
+
+img{
+    width: 100%;
 }
 
 /* header */
@@ -28,10 +34,28 @@ header{
 /* main */
 
 .main-container{
-    max-width: 90%;
+    max-width: 92%;
     height: calc(100vh - 170px);
     margin: 20px auto;
     overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 10px
+}
+
+.card{
+    max-width: calc(100% / 7 - 10px);
+    position: relative;
+}
+
+.info{
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* footer */
@@ -74,7 +98,11 @@ footer{
     font-size: 1.8rem;
 }
 
-.footer-left > .fa-angle-up{
+.footer-item span{
+    font-size: 0.8rem;
+}
+
+.footer-left > .fa-angle-up, .footer-center > .fa-angle-up{
     font-size: 0.7rem;
 }
 
@@ -95,4 +123,8 @@ footer{
 
 .flex{
     display: flex;
+}
+
+.color-green{
+    color: var(--green);
 }
