@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --button: #4a4a4a;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* header */
+
+header{
+    height: 50px;
+    text-align: right;
+}
+
+.options{
+    padding-right: 5px;
+    line-height: 50px;
+}
+
+/* main */
+
+.main-container{
+    max-width: 90%;
+    height: calc(100vh - 170px);
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+/* footer */
+
+footer{
+    height: 80px;
+    background-color: #222222;
+    padding-left: 15px;
+}
+
+.footer-navbar{
+    height: 100%;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-center, .footer-right{
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}
+
+.footer-right{
+    background-color: #4a4a4a;
+    height: 100%;
+    padding: 0 15px;
+    color: red;
+}
+
+.footer-item{
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item i{
+    font-size: 1.8rem;
+}
+
+.footer-left > .fa-angle-up{
+    font-size: 0.7rem;
+}
+
+/* utils */
+
+
+.debug{
+    border: 2px dashed white;
+}
+
+.btn{
+    background-color: var(--button);
+    border: transparent;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.flex{
+    display: flex;
+}
